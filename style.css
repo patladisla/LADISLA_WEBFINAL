@@ -1,0 +1,63 @@
+
+:root {
+    --sky-blue: #a8d1df;    /* Top color */
+    --steel-blue: #7c90b1;  /* Second color */
+    --soft-pink: #f7d1d1;   /* Third color */
+    --pale-rose: #fcebeb;   /* Bottom color */
+    --text-dark: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--pale-rose);
+}
+
+
+.navbar {
+    background-color: var(--steel-blue);
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: 600;
+}
+.nav-link:hover {
+    color: var(--soft-pink) !important;
+}
+
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.service-card {
+    background-color: white;
+    transition: transform 0.3s ease;
+    border-top: 5px solid var(--sky-blue) !important;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: var(--steel-blue);
+    color: white;
+}
+
+footer a {
+    color: var(--soft-pink);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
